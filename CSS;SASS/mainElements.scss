@@ -1,0 +1,387 @@
+@import url(../CSS;SASS/fonts.css);
+$color-border: #CDCDCD;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.symbol-foot {
+    height: 225px;
+    width: 24.82%;
+    border: 1px solid $color-border;
+    background-color: #fff;
+    border-bottom: none;
+    font-family: 'Follow_me';
+    color: #000;
+    font-size: 112px;
+    text-align: center;
+    sup {
+        color: #51113F;
+    }
+}
+.cap {
+    width: 87%;
+    background-color: #FFF;
+    border:1px solid $color-border;
+    nav.nav-secondary {
+        width: 100%;
+        height: 35px;
+        background-color: #FFF;
+        border-bottom: 1px solid $color-border;
+        .icons {
+            margin: 13px 0 0 10px;
+            width: 15px;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+        }
+        .icons:hover {
+            transform: scale(1.2);
+        }
+        a {
+            font-size: 20px;
+            width: 20%;
+            margin-left: 20px;
+            font-family: 'Zen Antique', serif;
+            color: #000;
+            text-decoration: none;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+        }
+        a:hover {
+            font-size: 20.7px;
+            color:#330606;
+        }
+    }
+    p.symbol {
+        height: 180px;
+        font-size: 120px;
+        //text-align: center;
+        margin-left: 40px;
+        font-family: 'Follow_me';
+        background-image: url(../PHOTOes/2.jpg);
+        background-position: 730px -180px;
+        background-size: 750px;
+        background-repeat: no-repeat;
+        span.news-color {
+            color: #51113F;
+        }
+    }
+}
+.nav-main {
+    width: 87%;
+    height: 65px;
+    //position: sticky;
+    //top: 0;
+    border-bottom: 1px solid $color-border;
+    text-align: center;
+    background-color: #000;
+    border:1px solid #F3F3F3;
+    display: inline-flex;
+    align-items: center;
+    a {
+        height: 80px;
+        width: 20%;
+        font-size: 44px;
+        font-family: 'Zen Antique', serif;
+        color: #FFF;
+        text-decoration: none; 
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    a:hover {
+        font-size: 36.4px;
+        color: #d8c8e8;
+    }
+}
+.news-scince {
+    background-color: #475D6D;
+}
+.news-sport {
+    background-color: #9A5300;
+}
+.news-world {
+    background-color: #135519;
+}
+.news-politics {
+    background-color: #093969;
+}
+.news-belarus {
+    background-color: #8F0000;
+}
+footer.basement {
+    width: 87%;
+    height: 100px;
+    background-color: #000;
+    border:1px solid #F3F3F3;
+    position:sticky;
+    p {
+        position: absolute;
+        color: #fff;
+    }
+    p.quote-first {
+        font-family: 'Follow_me';
+        font-size: 38px;
+        margin: 6px 0px 0px 110px;
+    }
+    p.quote-second {
+        font-family: 'segoe';
+        font-size: 16px;
+        font-weight: 100;
+        margin: 55px 0px 0px 20px;
+    }
+    p.quote-third {
+        font-family: 'Merienda';
+        font-size: 24px;
+        margin: 15px 0px 38px 870px;
+        a {
+            display:inline-block; 
+            width: 30px;
+            height: 30px;
+        }
+        .insta {
+            margin-left: 3px;
+        }
+    }
+    p.quote-four {
+        font-family: 'Follow_me';
+        font-size: 68px;
+        margin: 0px 0px 0px 625px;
+    }
+    .quote-fifth {
+        font-family: 'Merienda';
+        font-size: 24px;
+        line-height: 30px;
+        margin: 15px 0px 30px 1060px;
+    }
+}
+
+@media only screen and (max-device-width : 480px) {
+    .cap {
+        nav.nav-secondary {
+            a {
+                font-size: 15px;
+            }
+            a:hover {
+                font-size: 16px;
+            }
+        }
+        p.symbol {
+            background-position: 350px -180px;
+        }
+    }
+    .nav-main {
+        a {
+            font-size: 30px;
+            height: 55px; 
+        }
+        a:hover {
+            font-size: 27px;
+        }
+    }
+    
+    footer.basement {
+        p.quote-first {
+            font-size: 36px;
+        }
+        p.quote-second {
+            font-size: 13px;;
+        }
+        p.quote-third {
+            font-size: 17px;
+            margin: 20px 0px 30px 550px;
+            a {
+                display:inline-block; 
+                width: 21px;
+                height: 22px;
+            }
+        }
+        p.quote-four {
+            font-size: 50px;
+            margin: 10px 0px 0px 425px;
+        }
+        .quote-fifth {
+            font-family: 'Merienda';
+            font-size: 17px;
+            line-height: 22px;
+            margin: 20px 0px 30px 700px;
+        }
+    }
+}
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+    .cap {
+        nav.nav-secondary {
+            a {
+                font-size: 17px;
+            }
+        }
+        p.symbol {
+            background-position: 400px -180px;
+        }
+    }
+    .nav-main {
+        a {
+            font-size: 32px;
+            height: 55px;
+        }
+    }
+    footer.basement {
+        p.quote-first {
+            font-size: 40px;
+        }
+        p.quote-second {
+            font-size: 13px;;
+        }
+        p.quote-third {
+            font-size: 20px;
+            margin: 15px 0px 30px 550px;
+            a {
+                display:inline-block; 
+                width: 24px;
+                height: 22px;
+            }
+        }
+        p.quote-four {
+            font-size: 60px;
+            margin: 3px 0px 0px 425px;
+        }
+        .quote-fifth {
+            font-size: 20px;
+            line-height: 22px;
+            margin: 15px 0px 30px 700px;
+        }
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .cap {
+        nav.nav-secondary {
+            .icons {
+                margin: 13px 0 0 10px;
+                width: 17.5px;
+            }
+            a {
+                font-size: 18px;
+            }
+            a:hover {
+                font-size: 19px;
+            }
+        }
+        p.symbol {
+            background-position: 400px -180px;
+        }
+    }
+    .nav-main {
+        a {
+            font-size: 36px;
+            height: 62px;
+        }
+        a:hover {
+            font-size: 37px;
+        }
+    }
+    
+    footer.basement {
+        p.quote-first {
+            font-size: 30px;
+        }
+        p.quote-second {
+            font-size: 13px;;
+        }
+        p.quote-third {
+            font-size: 20px;
+            margin: 20px 0px 30px 560px;
+            a {
+                display:inline-block; 
+                width: 24px;
+                height: 22px;
+            }
+        }
+        p.quote-four {
+            font-size: 60px;
+            margin: 2px 0px 0px 425px;
+        }
+        .quote-fifth {
+            font-family: 'Merienda';
+            font-size: 20px;
+            line-height: 22px;
+            margin: 20px 0px 30px 700px;
+        }
+    }
+}
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1400px) {
+    .cap {
+        nav.nav-secondary {
+            .icons {
+                margin: 13px 0 0 10px;
+                width: 17.5px;
+            }
+            a {
+                font-size: 18px;
+            }
+            a:hover {
+                font-size: 19px;
+            }
+        }
+        p.symbol {
+            background-position: 570px -180px;
+        }
+    }
+    
+    .nav-main {
+        a {
+            font-size: 37px;
+            height: 64px;
+           
+        }
+        a:hover {
+            font-size: 37px;
+        }
+    }
+    
+    footer.basement {
+        p.quote-first {
+            font-size: 40px;
+        }
+        p.quote-second {
+            font-size: 15px;;
+        }
+        p.quote-third {
+            font-size: 24px;
+            margin: 20px 0px 30px 700px;
+            line-height:30px;
+            a {
+                display:inline-block; 
+                width: 30px;
+                height: 22px;
+            }
+            path {
+                transition-duration: 0.3s;
+                transition-timing-function: linear;
+            }
+            svg:hover {
+                path {
+                    fill:#51113F;
+                }
+            }
+        }
+        p.quote-four {
+            font-size: 66px;
+            margin: 2px 0px 0px 490px;
+        }
+        .quote-fifth {
+            font-family: 'Merienda';
+            font-size: 24px;
+            line-height: 28px;
+            margin: 20px 0px 30px 900px;
+        }
+    }
+}
