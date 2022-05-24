@@ -1,5 +1,13 @@
 @import url(../CSS;SASS/fonts.css);
+
 $color-border: #CDCDCD;
+$symbol-foot-font: 112px;
+$color-scince: #475D6D;
+$color-belarus: #8F0000;
+$color-sport: #9A5300;
+$color-politics: #093969;
+$color-world: #135519;
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +31,7 @@ a {
     border-bottom: none;
     font-family: 'Follow_me';
     color: #000;
-    font-size: 112px;
+    font-size: $symbol-foot-font;
     text-align: center;
     sup {
         color: #51113F;
@@ -58,7 +66,7 @@ a {
             transition-timing-function: linear;
         }
         a:hover {
-            font-size: 20.7px;
+            font-size: 20.1px;
             color:#330606;
         }
     }
@@ -104,19 +112,19 @@ a {
     }
 }
 .news-scince {
-    background-color: #475D6D;
+    background-color: $color-scince;
 }
 .news-sport {
-    background-color: #9A5300;
+    background-color: $color-sport;
 }
 .news-world {
-    background-color: #135519;
+    background-color: $color-world;
 }
 .news-politics {
-    background-color: #093969;
+    background-color: $color-politics;
 }
 .news-belarus {
-    background-color: #8F0000;
+    background-color: $color-belarus;
 }
 footer.basement {
     width: 87%;
@@ -142,7 +150,7 @@ footer.basement {
     p.quote-third {
         font-family: 'Merienda';
         font-size: 24px;
-        margin: 15px 0px 38px 870px;
+        margin: 15px 0px 38px 1070px;
         a {
             display:inline-block; 
             width: 30px;
@@ -155,13 +163,13 @@ footer.basement {
     p.quote-four {
         font-family: 'Follow_me';
         font-size: 68px;
-        margin: 0px 0px 0px 625px;
+        margin: 0px 0px 0px 750px;
     }
     .quote-fifth {
         font-family: 'Merienda';
         font-size: 24px;
         line-height: 30px;
-        margin: 15px 0px 30px 1060px;
+        margin: 15px 0px 30px 1360px;
     }
 }
 
@@ -172,7 +180,7 @@ footer.basement {
                 font-size: 15px;
             }
             a:hover {
-                font-size: 16px;
+                font-size: 15.1px;
             }
         }
         p.symbol {
@@ -223,6 +231,9 @@ footer.basement {
             a {
                 font-size: 17px;
             }
+            a:hover {
+                font-size: 17.1px;
+            }
         }
         p.symbol {
             background-position: 400px -180px;
@@ -272,7 +283,7 @@ footer.basement {
                 font-size: 18px;
             }
             a:hover {
-                font-size: 19px;
+                font-size: 18.1px;
             }
         }
         p.symbol {
@@ -328,7 +339,7 @@ footer.basement {
                 font-size: 18px;
             }
             a:hover {
-                font-size: 19px;
+                font-size: 18.1px;
             }
         }
         p.symbol {
